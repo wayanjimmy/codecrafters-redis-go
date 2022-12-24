@@ -29,5 +29,5 @@ func main() {
 
 func handleConnection(c net.Conn) {
 	defer c.Close()
-	c.Write([]byte("+OK\r\n"))
+	c.Write([]byte("+PONG\r\n"))
 }
